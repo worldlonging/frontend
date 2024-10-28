@@ -1,0 +1,429 @@
+/*Стили для всего body*/
+html,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Gill Sans Nova";
+}
+.body{
+    background: -webkit-linear-gradient(90deg, #0f1116,#1a1b22);
+    background: linear-gradient(90deg, #0f1116,#1a1b22);
+
+
+}
+/*Стили для header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: whitesmoke solid 3px;
+    background: -webkit-linear-gradient(90deg, #000000,#030032);
+    background: linear-gradient(90deg, #000000,#030032);
+
+}
+.header img{
+    margin-top: 0px;
+    margin-left: 30px;
+    transition: transform 0.4s ease;
+}
+.header img:hover{
+    transform: scale(130%);
+}
+
+.headerP{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-end;
+    padding-top: 5px;
+    padding-right: 15px;
+    height: 100%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.headerP2{
+    margin-top: 5px;
+}
+/*Стили для NAVBAR и гипер-сылок*/
+.navbar {
+    border: whitesmoke solid 3px;
+    border-top: none;
+    border-right: none;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    background: -webkit-linear-gradient(90deg, #000000,#030032);
+    background: linear-gradient(90deg, #000000,#030032);
+
+}
+.navbarol {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 25px;
+}
+.link {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+}
+.link:hover {
+    cursor: pointer;
+    color: red;
+
+}
+
+/*Стили для aside (main.html)*/
+.aside{
+    display: flex;
+    border: whitesmoke solid 3px;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 5px;
+    padding-right: 12px;
+    margin-top: -1px;
+    width: 25%;
+    background: -webkit-linear-gradient(90deg, #0f1116,#1a1b22);
+    background: linear-gradient(90deg, #0f1116,#1a1b22);
+}
+.aside-elements div{
+    display: flex;
+    flex-flow: column;
+    column-gap: -20px;
+    margin-left: 10px;
+}
+.aside-elements p{
+    display: flex;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    flex-direction: row;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.link2{
+    transition: transform 0.5s ease;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.link2:hover{
+    cursor: pointer;
+    color: deepskyblue;
+}
+.link2:active{
+    transform: scale(0.95);
+}
+
+
+
+
+/*Стили main (main.html)*/
+.main{
+    border: whitesmoke solid 0px;
+}
+.main div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main img{
+    margin-right: 4%;
+    transition: transform 0.4s ease;
+}
+.main img:hover {
+    border: whitesmoke solid 1px;
+    border-radius: 5%;
+    transform: scale(1.2);
+}
+.main p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-top: 0%;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: 120%;
+}
+h1{
+    margin-left: 2%;
+    margin-top: 2%;
+    color: whitesmoke;
+}
+h2{
+    margin-left: 2%;
+    color: whitesmoke;
+}
+video{
+    margin-left: 30%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border: 2px skyblue solid;
+    border-radius: 8px;
+}
+
+
+/*Стили для main (service.html)*/
+#main{
+    background: -webkit-linear-gradient(90deg, #0f1116,#1a1b22);
+    background: linear-gradient(90deg, #0f1116,#1a1b22);
+
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-top: 0%;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: 120%;
+
+}
+.item p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 130%;
+}
+.grid-container{
+    margin-left: 0.95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 25px;
+    padding: 25px;
+}
+.item{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #0f1116;
+    border: 1px solid whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.6s ease;
+}
+.item:hover{
+    transform: scale(108%);
+}
+
+.button{
+    white-space: nowrap;
+    background-color: #f7fbfc;
+    color: black;
+    width: 20%;
+    height: 30px;
+    border: #17b978 solid 1px;
+    font-size: 16px;
+    margin-top: -2%;
+    transition: background-color 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    border-radius: 7px;
+}
+.button:hover{
+    background-color: #17b978;
+}
+.button:active{
+    transform: scale(0.95);
+}
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #17b978;
+}
+
+/*Стили для main (workspace.html)*/
+main{
+    margin-left: 2%;
+    color: whitesmoke;
+}
+
+/*Стили для Футера*/
+
+.footer {
+    background: -webkit-linear-gradient(90deg, #000000,#030032);
+    background: linear-gradient(90deg, #000000,#030032);
+    display: flex;
+    justify-content: flex-end;
+    border-top: whitesmoke solid 3px;
+}
+.footer p {
+    text-align: center;
+    flex-basis: 100%;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 13px;
+}
+.footer img{
+    transition: 0.5s ease;
+}
+.footer img:hover{
+    border: 1px solid whitesmoke;
+    border-radius: 150%;
+}
+.footer img:active{
+    transform: scale(0.85);
+}
+
+
+
+
+
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed; /* Окончательное позиционирование */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Ширина 100% */
+    height: 100%; /* Высота 100% */
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-content {
+    background: -webkit-linear-gradient(90deg, #0f1116,#1a1b22);
+    background: linear-gradient(90deg, #0f1116,#1a1b22);
+    margin: 15% auto; /* 15% сверху и центрирование */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+}
+.close {
+
+    color: whitesmoke;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal_h2{
+    display: flex;
+    flex-direction: row;
+    white-space: none;
+    text-align: center;
+    margin-top: 2%;
+    color: whitesmoke;
+}
+.input{
+    align-items: center;
+    column-gap: 20px;
+    margin-left: 5%;
+    font-size: 15px;
+
+}
+form{
+    color: whitesmoke;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+label{
+}
+.form{
+    align-items: center;
+    flex-direction: row;
+}
+.submit{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Стили для адаптивности*/
+@media (max-width: 800px) and (min-width: 320px) {
+    .aside{
+        display: none;
+    }
+    video{
+        margin-left: 5%;
+        width: 80%;
+        border: none;
+    }
+    .navbar{
+        position: sticky;
+        top: 0;
+    }
+    .navbarol{
+        padding-left: 0;
+        column-gap: 0px;
+    }
+    img{
+        pointer-events: none;
+        max-width: 100%;
+    }
+    .grid-container{
+        display: block;
+    }
+    .item{
+
+    }
+    .button{
+        transform: none;
+        font-size: 14px;
+        padding: 8px 16px;
+        width: auto;
+    }
+
+
+    #contact{
+        width: 100%;
+    }
+    .modal-content{
+        width: 70%;
+        padding-left: 15px;
+    }
+    .form{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end  ;
+        justify-content: flex-start;
+    }
+    table{
+        width: 80%;
+    }
+    .close{
+        column-gap: 50px;
+    }
+
+
+}
