@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="foto/favicon_main.svg">
+    <link rel="shortcut icon" href="foto/favicon_main.svg">
+</head>
+
+        <!--Тело-->
+<body class="body">
+
+        <!--Шапка-->
+    <div class="header">
+        <img src="foto/Flag_of_Russia.svg" width="80px" height="80px">
+        <div class="headerP">
+             <p>Группа ЭФБО-04-23</p>
+             <p class="headerP2">Ткаченко Артур Витальевич</p>
+        </div>
+    </div>
+
+            <!--Навбар-->
+    <div class="navbar">
+        <ol class="navbarol">
+            <li><a href="main.html" class="link">Главная</a></li>
+            <li><a href="workspace.html" class="link">Первый семестр</a></li>
+            <li><a href="#" class="link">Второй семестр</a></li>
+            <li><a href="service.html" class="link">Услуги</a></li>
+            <li><a href="#" class="link">Авторизация</a></li>
+        </ol>
+    </div>
+
+
+
+        <div style="display: flex; flex-direction: row;">
+            <!--Боковая часть-->
+    <div class="aside">
+        <div class="aside-elements">
+            <p>Навигация по странице</p>
+            <div>
+                <a href="#frontend" class="link2">Фронтенд</a><br>
+                <a href="#backend" class="link2" style="margin-top: -10px;">Бэкенд</a>
+            </div>
+        </div>
+    </div>
+
+            <!--Основная часть страницы-->
+    <div class="main">
+        <h1>Добро пожаловать на мой сайт</h1>
+        <div>
+            <p>Меня зовут Ткаченко Артур Витальевич и я начинающий специалист по web-developing</p>
+            <img src="foto/photo_2020-12-07_21-32-30.jpg" width="220px" height="220px" class="image">
+        </div>
+        <br>
+        <h2 id="frontend">Фронтенд</h2>
+        <p>Фронтенд (или клиентская часть) - это то, что видит пользователь. Он включает в себя все визуальные элементы веб- сайта или приложения: кнопки,
+        формы, изображения и текст. Фронтенд разработчики используют разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы.
+        Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность</p>
+        <video width="640" height="360" controls muted poster="videos/poster_frontend.jpg">
+            <source src="videos/frontend.mp4" type="video/mp4" class="video-frontend">
+            Ваш браузер не поддерживает видео.
+        </video>
+        <br>
+        <h2 id="backend">Бэкенд</h2>
+        <p>Бэкенд (или серверная часть) - это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных.
+        Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда - обеспечить стабильную работу приложения и безопасность данных.</p>
+        <video width="640" height="360" controls muted poster="videos/poster_backend.jpg">
+            <source src="videos/backend.mp4" type="video/mp4" class="video-backend">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+    </div>
+
+            <!--Футер-->
+    <div class="footer">
+        <p>&copy; by Tkachenko A.B, 2024</p>
+        <a href="https://t.me/tenshyy1" target="_blank" style="flex-basis: 2.5%; margin-top: 0.05%;"><img src="foto/telegramico.svg" width="40px" height="40px"></a>
+        <a href="https://github.com/worldlonging" target="_blank" style="flex-basis: 3%;"><img src="foto/githubsvg.svg" width="40px" height="40px"></a>
+    </div>
+
+    <script src="main.js"></script>
+
+        <!--Подключение js файла-->
+</body>
+</html>
