@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task</title>
+</head>
+<body style="background-color: black;">
+<script>
+  let age, name;
+  name = prompt("Введите свое имя");
+  age = prompt("Введите свой возраст");
+  alert(name + " " + age);
+  console.log(name, age);
+
+  if (age >= 18){
+    alert("малый повзрослел")
+  }
+  else{ alert("Нет 18-ти лет") }
+
+  //Угадалка
+  let random = Math.floor(Math.random() * 9) + 1;
+  let chislo = prompt("Угадайте число от 1 до 10:");
+  chislo = Number(chislo);
+  if (chislo === random) {
+      alert("Ты угадал число!");
+  }
+  else {
+      if (chislo < 5) {
+          alert("Ваше число меньше 5");
+      } else if (chislo > 5) {
+          alert("Ваше число больше 5");
+      } else {
+          alert("Ты ввел 5, но все же не угадал число :))");
+      }
+  }
+  //Проверка password
+  let userPassword = prompt("Введите пароль:");
+  let pass = "12345";
+  if (userPassword && userPassword === pass) {
+      alert("Ты угадал пароль, доступ разрешен");
+  } else if (!userPassword) {
+      alert("Ты ввел пустоту :/");
+  } else {
+      alert("Доступ запрещен");
+  }
+  //калсулятор
+  let num1 = prompt("Введите первое number");
+  let num2 = prompt("Введите второй number");
+  num1 = Number(num1);
+  num2 = Number(num2);
+  let operator = prompt("Выберите операцию (+, -, *, /)");
+  let result;
+  switch (operator) {
+      case "+":
+          result = num1 + num2;
+          break;
+      case "-":
+          result = num1 - num2;
+          break;
+      case "*":
+          result = num1 * num2;
+          break;
+      case "/":
+          if (num2 === 0) {
+              alert("Зачем ты делишь на ноль??");
+              result = null;
+          } else {
+              result = num1 / num2;
+          }
+          break;
+      default:
+          alert("Ты ввел неправильный оператор");
+          result = null;
+  }
+  if (result !== null) {
+      alert(`Результат: ${result}`);
+  }
+</script>
+
+</body>
+</html>
