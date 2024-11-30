@@ -6,75 +6,50 @@
 </head>
 <body style="background-color: black;">
 <script>
-  let age, name;
-  name = prompt("Введите свое имя");
-  age = prompt("Введите свой возраст");
-  alert(name + " " + age);
-  console.log(name, age);
+    const name = "Ваше имя";
+    const age = 52;
+    if (age >= 18) {
+        console.log("Вы совершеннолетний");
+    } else {
+        console.log("Вы несовершеннолетний");
+    }
+    mas = [];
+    for (let i = 1; i <= 10; i++) {
+        mas.push(i);
+    }
+    console.log(arrayToString(mas));
+    mas = [];
+    let num = 10;
+    while (num >= 1) {
+        mas.push(num);
+        num--;
+    }
+    console.log(arrayToString(mas));
+    const lectures = ["Тема 1", "Тема 2", "Тема 3"];
+    const practices = ["Практика 1", "Практика 2", "Практика 3"];
+    lectures.push("Тема бла-бла");
+    practices.push("Практика 4");
+    console.log("Темы лекций:");
+    lectures.forEach((lecture) => console.log(lecture));
+    console.log("Темы практик:");
+    practices.forEach((practice) => console.log(practice));
 
-  if (age >= 18){
-    alert("малый повзрослел")
-  }
-  else{ alert("Нет 18-ти лет") }
+    function arrayToString(arr) {
+        return arr.join(", ");
+    }
 
-  //Угадалка
-  let random = Math.floor(Math.random() * 9) + 1;
-  let chislo = prompt("Угадайте число от 1 до 10:");
-  chislo = Number(chislo);
-  if (chislo === random) {
-      alert("Ты угадал число!");
-  }
-  else {
-      if (chislo < 5) {
-          alert("Ваше число меньше 5");
-      } else if (chislo > 5) {
-          alert("Ваше число больше 5");
-      } else {
-          alert("Ты ввел 5, но все же не угадал число :))");
-      }
-  }
-  //Проверка password
-  let userPassword = prompt("Введите пароль:");
-  let pass = "12345";
-  if (userPassword && userPassword === pass) {
-      alert("Ты угадал пароль, доступ разрешен");
-  } else if (!userPassword) {
-      alert("Ты ввел пустоту :/");
-  } else {
-      alert("Доступ запрещен");
-  }
-  //калсулятор
-  let num1 = prompt("Введите первое number");
-  let num2 = prompt("Введите второй number");
-  num1 = Number(num1);
-  num2 = Number(num2);
-  let operator = prompt("Выберите операцию (+, -, *, /)");
-  let result;
-  switch (operator) {
-      case "+":
-          result = num1 + num2;
-          break;
-      case "-":
-          result = num1 - num2;
-          break;
-      case "*":
-          result = num1 * num2;
-          break;
-      case "/":
-          if (num2 === 0) {
-              alert("Зачем ты делишь на ноль??");
-              result = null;
-          } else {
-              result = num1 / num2;
-          }
-          break;
-      default:
-          alert("Ты ввел неправильный оператор");
-          result = null;
-  }
-  if (result !== null) {
-      alert(`Результат: ${result}`);
-  }
+    console.log("Лекции в строку:", arrayToString(lectures));
+    console.log("Практики в строку:", arrayToString(practices));
+
+
+    function filterLecturesByLetterO(lectures) {
+        return lectures.filter((lecture) => lecture.startsWith("О"));
+    }
+
+    lectures.push("ООП");
+
+    const filteredLectures = filterLecturesByLetterO(lectures);
+    console.log("Темы, начинающиеся на 'О':", arrayToString(filteredLectures));
 </script>
 
 </body>
