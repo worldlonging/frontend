@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="105be2c5-a3ed-4cfb-947f-e0a65dea55d4" name="Changes" comment="10 task">
-      <change afterPath="$PROJECT_DIR$/jstask.js" afterDir="false" />
+    <list default="true" id="105be2c5-a3ed-4cfb-947f-e0a65dea55d4" name="Changes" comment="11 task">
+      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jstask.html" beforeDir="false" afterPath="$PROJECT_DIR$/jstask.html" afterDir="false" />
     </list>
@@ -42,10 +42,16 @@
     "accountId": "b40e6470-9c08-48e9-a805-ca59f3d6ec62"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2ny1HhrDHAvoto16qZKQIbJxetu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -99,7 +105,7 @@
       <workItem from="1730015998558" duration="33265000" />
       <workItem from="1730137059308" duration="4349000" />
       <workItem from="1730145649625" duration="597000" />
-      <workItem from="1732977937456" duration="2079000" />
+      <workItem from="1732977937456" duration="3111000" />
     </task>
     <task id="LOCAL-00001" summary="10 task">
       <option name="closed" value="true" />
@@ -117,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732978832326</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="11 task">
+      <option name="closed" value="true" />
+      <created>1732980295531</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732980295531</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +139,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="10 task" />
-    <option name="LAST_COMMIT_MESSAGE" value="10 task" />
+    <MESSAGE value="11 task" />
+    <option name="LAST_COMMIT_MESSAGE" value="11 task" />
   </component>
 </project>
