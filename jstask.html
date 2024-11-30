@@ -13,7 +13,7 @@
     <iframe src="https://www.youtube.com/embed/example" width="560" height="315"></iframe>
     <script>
         const h1 = document.querySelector("h1");
-        h1.textContent = "Добро пожаловать на наш сайт!";
+        h1.textContent = "Добро пожаловать на cайт!";
 
         const h2 = document.querySelector("h2");
         h2.style.color = "red";
@@ -94,12 +94,50 @@
     </script>
 </div>
 <div class="12task">
-    <h1>welcome</h1>
+    <h1 id="welcome">welcome</h1>
     <div class="content">
         <p>Абзац</p>
     </div>
 </div>
-<script src="script.js"></script>
+<div class="13task">
+    <h1 id="practice">Практические занятия</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>Темы первого семестра</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>1</td><td>HTML и CSS</td></tr>
+        <tr><td>2</td><td>Основы JavaScript</td></tr>
+        <tr><td>3</td><td>Работа с DOM</td></tr>
+        <tr><td>4</td><td>Обработчики событий</td></tr>
+        </tbody>
+    </table>
+
+    <button id="change">Посмотреть практики</button>
+
+    <h2>Фотография</h2>
+    <img id="photo" src="foto/avatarka.jpg" alt="Фото" width="200" height="200">
+</div>
+<div class="14task">
+    <h1 id="paragraf" style="position: relative; text-align: center; margin: 0;">Параграф</h1>
+    <p id="text">бла-бла-бла</p>
+    <button id="showLectures">Показать лекции</button>
+    <table id="lecturesTable" style="display: none;">
+        <tr><td>Лекция 1</td></tr>
+        <tr><td>Лекция 2</td></tr>
+        <tr><td>Лекция 3</td></tr>
+    </table>
+    <form id="form2">
+        <input type="text" placeholder="Введите имя" required>
+        <input type="email" placeholder="Введите email" required>
+        <button type="submit">Отправить</button>
+    </form>
+    <div id="formMessage" style="display: none;">Форма отправлена!</div>
+</div>
 <script src="jstask.js"></script>
 </body>
 </html>
