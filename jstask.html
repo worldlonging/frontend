@@ -45,54 +45,6 @@
         <button type="submit">Отправить</button>
     </form>
 </div>
-<div class="10task">
-    <script>
-        const name = "Ваше имя";
-        const age = 52;
-        if (age >= 18) {
-            console.log("Вы совершеннолетний");
-        } else {
-            console.log("Вы несовершеннолетний");
-        }
-        mas = [];
-        for (let i = 1; i <= 10; i++) {
-            mas.push(i);
-        }
-        console.log(arrayToString(mas));
-        mas = [];
-        let num = 10;
-        while (num >= 1) {
-            mas.push(num);
-            num--;
-        }
-        console.log(arrayToString(mas));
-        const lectures = ["Тема 1", "Тема 2", "Тема 3"];
-        const practices = ["Практика 1", "Практика 2", "Практика 3"];
-        lectures.push("Тема бла-бла");
-        practices.push("Практика 4");
-        console.log("Темы лекций:");
-        lectures.forEach((lecture) => console.log(lecture));
-        console.log("Темы практик:");
-        practices.forEach((practice) => console.log(practice));
-
-        function arrayToString(arr) {
-            return arr.join(", ");
-        }
-
-        console.log("Лекции в строку:", arrayToString(lectures));
-        console.log("Практики в строку:", arrayToString(practices));
-
-
-        function filterLecturesByLetterO(lectures) {
-            return lectures.filter((lecture) => lecture.startsWith("О"));
-        }
-
-        lectures.push("ООП");
-
-        const filteredLectures = filterLecturesByLetterO(lectures);
-        console.log("Темы, начинающиеся на 'О':", arrayToString(filteredLectures));
-    </script>
-</div>
 <div class="12task">
     <h1 id="welcome">welcome</h1>
     <div class="content">
@@ -120,7 +72,7 @@
     <button id="change">Посмотреть практики</button>
 
     <h2>Фотография</h2>
-    <img id="photo" src="foto/avatarka.jpg" alt="Фото" width="200" height="200">
+    <img id="photo" src="foto/avatarka.jpg" alt="Фото" width="200px" height="200px">
 </div>
 <div class="14task">
     <h1 id="paragraf" style="position: relative; text-align: center; margin: 0;">Параграф</h1>

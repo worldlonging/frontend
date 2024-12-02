@@ -4,7 +4,7 @@ function showMessage(message) {
 }
 
 // Функция изменения цвета фона страницы
-function changeBackgroundColor(color) {
+function change(color) {
     document.body.style.backgroundColor = color;
 }
 
@@ -33,7 +33,6 @@ function logCurrentTime() {
     console.log(`Текущее время: ${timeString}`);
 }
 
-// Функция сброса цвета фона к исходному
 function resetBackgroundColor() {
     document.body.style.backgroundColor = "white";
 }
@@ -44,7 +43,7 @@ showMessage("Скрипт успешно загружен!");
 logCurrentTime();
 
 document.addEventListener("DOMContentLoaded", () => {
-    changeBackgroundColor("lightblue");
+    change("lightblue");
     //resetBackgroundColor();
     toggleVisibility(".content");
     updateHeadingFromUTM();
@@ -88,21 +87,21 @@ document.getElementById("change").addEventListener("click", () => {
 
 const Photo = document.getElementById("photo");
 Photo.addEventListener("mouseover", () => {
-    Photo.style.width = "25%";
-    Photo.style.height = "25%";
+    Photo.style.width = "20%"; //..
+    Photo.style.height = "20%";
     Photo.style.transition = 'transform 0.4s ease-in-out';
     Photo.style.transform = 'rotate(360deg)';
 
 });
 
 Photo.addEventListener("mouseout", () => {
-    Photo.style.width = "20%";
-    Photo.style.height = "20%";
+    Photo.style.width = "15%";
+    Photo.style.height = "15%";
     Photo.style.transform = 'rotate(0deg)';
 });
 
 Photo.addEventListener("click", () => {
-    Photo.src = "https://images.hdqwalls.com/download/mountain-reflections-3840x2400.jpg";
+    Photo.src = "https://oreluniver.ru/file/employee/3753/IMG_0123.png";
 });
 
 // Сообщение по двойному клику
